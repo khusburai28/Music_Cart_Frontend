@@ -1,0 +1,165 @@
+.container{
+    min-height: 100vh;
+    /* background-color: rgb(174, 174, 239); */
+    padding: 20px;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.back_button{
+    background-color: #2E0052;
+    color: white;
+    padding: 5px 20px;
+    font-weight: 500;
+    border-radius: 20px;
+    border: none;
+    min-width:fit-content ;
+    cursor: pointer;
+}
+
+.description{
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.productview{
+    display: flex;
+}
+
+.photos{
+    width: 40%;
+    /* min-width: 300px; */
+    /* background-color: pink; */
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    gap: 2px;
+}
+
+.imageContainer{
+    height: 300px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.buyButtons{
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    width:100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.button{
+    background-color: #2E0052;
+    color: black;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 20px;
+    border: none;
+    min-width:fit-content;
+    width: 200px;
+    cursor: pointer;
+}
+
+.button:active{
+    transform: scale(0.95);
+}
+
+#cart{
+    background-color: #FFD600;
+}
+
+#buy{
+    background-color: #FFB800;
+}
+
+p{
+    font-size: 1rem;
+}
+
+li{
+    font-size: 0.8rem;
+    margin-left: 30px;
+}
+
+.topbuyButton{
+    background-color: #FFB800;
+    display: none;
+    color: black;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 20px;
+    border: none;
+    min-width: fit-content;
+    width: 200px;
+    cursor: pointer;
+}
+
+
+.backArrow{
+        width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            display: none;
+            cursor: pointer;
+            box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.3);
+    }
+
+
+@media (max-width:768px){
+    .topbuyButton{
+        display: block;
+    }
+    .container{
+        padding-top: 60px;
+    }
+    .back_button{
+        display: none;
+    }
+    .backArrow{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .productview{
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .photos{
+        width: 100%;
+
+    }
+
+    .details{
+        margin-left: 0px;
+    }
+    .buyButtons{
+        flex-direction: column;
+    }
+
+    .button{
+        width: 100%;
+    }
+
+}
+
+

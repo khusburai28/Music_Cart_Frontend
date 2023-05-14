@@ -1,0 +1,249 @@
+.container{
+    min-height: 100vh;
+    /* background-color:rgb(240, 203, 134); */
+    padding: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.back_button {
+    background-color: #2E0052;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 20px;
+    border: none;
+    min-width: fit-content;
+    cursor: pointer;
+}
+
+.back_button:active{
+    transform: scale(0.98);
+}
+
+.cart{
+    width: 100%;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.icon{
+    font-size: 2.5rem;
+}
+
+.bill{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* background-color: antiquewhite; */
+}
+
+.itemsList{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+   border-top: 2px solid #e1e1e1;
+   border-bottom : 2px solid #e1e1e1;
+    padding: 20px;
+}
+
+.item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.itemDetails{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex:1;
+    padding: 0px 50px;
+}
+
+.image > img{
+    width: 150px;
+    object-fit: cover;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;  
+    gap: 5px;
+}
+
+.column > h3{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.column > p{
+    color:rgb(94, 93, 93)
+}
+
+.quantity{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.quantity > p{
+    max-width: 50px;
+    width:fit-content;
+    height: 30px;
+    /* border: 1px solid rgb(94, 93, 93); */
+    border:none;
+    background-color: #f0f0f0;
+    /* border-radius: 5px; */
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    outline : none;
+}
+
+.quantity > button{
+    background-color: #FFD600;
+    color: black;
+    width: 30px;
+    height: 30px;
+    border: none;
+    /* border-radius: 5px; */
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.quantity>button:active{
+    transform: scale(0.98);
+}
+
+.priceDetails{
+    width: 30%;
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: stretch; */
+    flex: 1;
+    height: 100%;
+    /* background-color: blue; */
+    /* border-left : 1px solid black; */
+}
+
+.priceDetails > h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.btn{
+    background-color: #FFD600;
+    /* color: ; */
+    width: 100%;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    font-size:1rem;
+    margin-top: 20px;
+    min-width: fit-content;
+    cursor: pointer;
+}
+
+.backArrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.3);
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+.btn:disabled{
+    background-color: grey
+}
+
+
+@media (max-width: 768px){
+
+
+    .cart{
+        display: none;
+    }
+    .bill{
+        margin-top:20px;
+        flex-direction: column;
+    }
+    .itemsList{
+        width: 100%;
+        padding: 0px;
+        border: none;
+        margin: 40px 0px; 
+        gap: 20px;
+    }
+
+    .itemDetails{
+        padding:0px;
+    }
+
+    .priceDetails{
+        width: 100%;
+        padding: 0px;
+        border: none;
+    }
+
+    
+
+    .container{
+        padding-top: 60px;
+    }
+    .back_button{
+        display: none;
+    }
+    .backArrow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media (max-width:420px){
+    .itemsList {
+        width: 100%;
+        padding: 0px;
+        border: none;
+        margin: 40px 0px;
+    }
+
+    .itemDetails {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}

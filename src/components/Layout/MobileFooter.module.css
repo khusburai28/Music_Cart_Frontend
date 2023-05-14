@@ -1,0 +1,37 @@
+
+.mobileFooter {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: none;
+    width: 100vw;
+    background-color: white;
+    color: #2E0052;
+    padding: 0px 20px;
+    border-top: 1px solid #2E0052;
+}
+
+.mobileFooter>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+p{
+    font-size:0.8rem;
+}
+
+.highlight {
+    font-weight: 700;
+    border-top: 2px solid #2E0052;
+}
+
+@media (max-width: 768px) {
+    .mobileFooter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

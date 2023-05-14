@@ -1,0 +1,60 @@
+.container{
+    /* height:200px; */
+    width:200px;
+    background-color: #f1f1f1;
+    
+}
+
+.image{
+    height: 200px;
+    width: 100%;
+    border: 30px solid rgba(0, 102, 255, 0.17);
+    position: relative;
+}
+
+.icons{
+    position: absolute;
+    bottom: -5px;
+    right:-5px;
+    padding: 5px;
+    background-color:white;
+    color: green;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icons:active{
+    transform: scale(0.9);
+}
+
+
+.image > img{
+    width: 140px;
+}
+
+.container > p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: black;
+    margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 150px;
+    }
+
+    .image{
+        height: 150px;
+    }
+
+    .image > img{
+        width: 100px;
+    }
+    .icons{
+        bottom: -20px;
+        right: -20px;
+    }
+
+}
+
