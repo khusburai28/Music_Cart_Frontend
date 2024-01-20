@@ -1,19 +1,19 @@
 
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import {useEffect} from "react";
+import { useEffect } from "react";
+import toast, { Toaster } from "react-hot-toast";
+import { useDispatch, useSelector } from "react-redux";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Login from "./components/Auth/Login.js";
 import Register from "./components/Auth/Register.js";
-import Header from "./components/Layout/Header.js";
-import Footer from "./components/Layout/Footer.js";
-import Home from "./components/Home/Home.js";
-import Loader from "./components/Layout/Loader.js";
-import ProductPage from "./components/ProductPage/ProductPage.js";
 import Cart from "./components/Cart/Cart.js";
-import toast, { Toaster } from "react-hot-toast";
-import { loadUser } from "./redux/actions/user.js";
-import { useDispatch, useSelector } from "react-redux";
 import Checkout from "./components/Checkout/Checkout.js";
+import Home from "./components/Home/Home.js";
+import Footer from "./components/Layout/Footer.js";
+import Header from "./components/Layout/Header.js";
+import Loader from "./components/Layout/Loader.js";
 import Success from "./components/Layout/Success.js";
+import ProductPage from "./components/ProductPage/ProductPage.js";
+import { loadUser } from "./redux/actions/user.js";
 // import { useNavigate } from "react-router-dom";
 
 
@@ -53,7 +53,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route
-          path="/home"
+          path="/"
           element={
             <>
               <Header />
