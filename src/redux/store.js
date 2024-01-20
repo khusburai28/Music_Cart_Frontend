@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
 //import reducers
-import {userReducer} from "./reducers/userReducer.js"
-import {productReducer} from "./reducers/productReducer.js"
-import {cartReducer} from "./reducers/cartReducer.js"
 import { breadReducer } from "./reducers/breadReducer.js";
+import { cartReducer } from "./reducers/cartReducer.js";
+import { productReducer } from "./reducers/productReducer.js";
+import { userReducer } from "./reducers/userReducer.js";
 
 
 
@@ -20,6 +20,6 @@ const store = configureStore({
 export default store;
 
 // export const server = "http://localhost:4000/api";
-export const server = "https://music-cart-backend.vercel.app/api";
+export const server = "https://music-cart-backend-three.vercel.app/api";
 
 
