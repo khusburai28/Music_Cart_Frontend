@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
@@ -14,14 +13,9 @@ import Loader from "./components/Layout/Loader.js";
 import Success from "./components/Layout/Success.js";
 import ProductPage from "./components/ProductPage/ProductPage.js";
 import { loadUser } from "./redux/actions/user.js";
-// import { useNavigate } from "react-router-dom";
-
 
 function App() {
-
-  const {message, error} = useSelector(
-    (state) => state.user
-  );
+  const { message, error } = useSelector((state) => state.user);
 
   const dispatch = useDispatch();
   useEffect(() => {
@@ -53,7 +47,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route
-          path="/"
+          path="/home"
           element={
             <>
               <Header />
@@ -83,13 +77,22 @@ function App() {
           path="/checkout"
           element={
             <>
-            <Header />
+              <Header />
               <Checkout />
             </>
           }
         />
         <Route path="/success" element={<Success />} />
         <Route path="/loader" element={<Loader />} />
+        <Route
+          path="/*"
+          element={
+            <>
+              <Header />
+              <Home />
+            </>
+          }
+        />
       </Routes>
       <Footer />
     </Router>
