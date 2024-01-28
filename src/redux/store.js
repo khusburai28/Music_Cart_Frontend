@@ -20,6 +20,6 @@ const store = configureStore({
 export default store;
 
 // export const server = "http://localhost:4000/api";
-export const server = "https://music-cart-backend-three.vercel.app/api";
+export const server = "https://music-cart-backend-wz2w.vercel.app/api";
 
 
